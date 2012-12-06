@@ -6,6 +6,15 @@ gem 'sqlite3'
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem 'fog'
 
+#Sunspot junk
+gem "sunspot_rails"
+gem 'sunspot_cell', :git => 'git://github.com/zheileman/sunspot_cell.git'
+
+# This is for running Sunspot locally. I suspect something is wrong with my schema config. 
+group :development do
+  gem 'sunspot_solr'
+end
+
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
