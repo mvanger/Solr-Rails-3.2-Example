@@ -13,7 +13,7 @@ class Document < ActiveRecord::Base
   
   searchable do
      text :title
-     attachment :attached_file
+     attachment :attached_file #When I enable this I get a 500 error. Something isn't right in the schema.xml I think
    end
 
 private
