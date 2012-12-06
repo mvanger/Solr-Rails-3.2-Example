@@ -159,6 +159,7 @@ DEPENDENCIES
   rails (= 3.2.9)
   sass-rails (~> 3.2.3)
   sqlite3
+  sunspot
   sunspot_cell!
   sunspot_rails
   sunspot_solr

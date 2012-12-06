@@ -13,11 +13,11 @@ class Document < ActiveRecord::Base
   
   searchable do
      text :title
-     #attachment :attached_file
+     attachment :attached_file
    end
 
 private
   def attached_file
-    URI.parse(file.expiring_url(60))
+    URI.parse(upload.expiring_url(60))
   end
 end

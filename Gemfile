@@ -7,6 +7,7 @@ gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem 'fog'
 
 #Sunspot junk
+gem "sunspot"
 gem "sunspot_rails"
 gem 'sunspot_cell', :git => 'git://github.com/zheileman/sunspot_cell.git'
 
