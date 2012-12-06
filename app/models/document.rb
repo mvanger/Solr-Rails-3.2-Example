@@ -11,10 +11,10 @@ class Document < ActiveRecord::Base
     end
   end
   
-  # searchable do
-  #    text :title
-  #    attachment :attached_file
-  #  end
+  searchable do
+     text :title
+     #attachment :attached_file
+   end
 
 private
   def attached_file
