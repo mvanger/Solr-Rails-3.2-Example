@@ -1,11 +1,11 @@
 class Document < ActiveRecord::Base
-  attr_accessible :title
+  attr_accessible :title, :upload
   has_attached_file :upload
   
-  searchable do
-     text :title
-     attachment :attached_file
-   end
+  # searchable do
+  #    text :title
+  #    attachment :attached_file
+  #  end
 
 private
   def attached_file
