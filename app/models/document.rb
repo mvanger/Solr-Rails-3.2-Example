@@ -13,11 +13,12 @@ class Document < ActiveRecord::Base
   
   searchable do
      text :title
-     attachment :attached_file #When I enable this I get a 500 error. Something isn't right in the schema.xml I think
+     attachment :document_upload
    end
 
 private
-  def attached_file
-    URI.parse(upload.expiring_url(60))
+  def document_upload
+    #URI.parse(upload.expiring_url(600))
+    URI.parse(upload.url)
   end
 end
