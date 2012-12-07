@@ -62,3 +62,4 @@ TODO:
 
 - Add a simple search box to the index
 - Format this document better
+- Ensure that this all works with WebSolr on Heroku as well. 
