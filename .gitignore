@@ -15,4 +15,5 @@
 /tmp
 .env
 /solr/data/*
+/solr/pids/*
 *.DS_Store
