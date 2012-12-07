@@ -21,13 +21,13 @@ rake db:migrate
 
 I am using the 'dotenv' gem from bkeepers (https://github.com/bkeepers/dotenv) for allowing Webrick and the rails console to easily access environmental variables. Foreman can also be used for this, but then the rails console stuff gets funny. 
 
-You will then want to edit the .env file with your Amazon credentials from https://portal.aws.amazon.com/gp/aws/securityCredentials
+Edit the .env file with your Amazon credentials from https://portal.aws.amazon.com/gp/aws/securityCredentials
 
-You can then start Solr. 
+To start Solr: 
 ```
 rake sunspot:solr:start
 ```
-to stop Solr
+To stop Solr: 
 ```
 rake sunspot:solr:stop
 ```
