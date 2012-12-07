@@ -9,7 +9,8 @@ This example application will get you up and running with Solr working for PDF i
 
 My goal was to make an app that worked with Rails 3.2, Amazon AWS/S3, and Solr for indexing (searching) PDF files. 
 
-To get started, check out this repo and install the needed gems:
+To get started, check out this repo and install the needed gems. Beware that its around 40MB because of all the .jar files in the /solr/lib directory.
+
 ```
 git clone git@github.com:tibbon/Solr-Rails-3.2-Example.git
 cd Solr-Rails-3.2-Example
