@@ -1,4 +1,11 @@
-<h1>Listing documents</h1>
+<h1>Documents to search</h1>
+
+<h3>Search</h3>
+<%= form_tag documents_path, :method => 'get', :class => "form-search" do %>
+  <%= text_field_tag :search, nil, :placeholder => "Name", 
+      :class => "input-medium search-query" %>
+  <%= submit_tag "Find!", :name => nil, :class => "btn" %>
+<% end %>
 
 <table>
   <tr>
@@ -20,4 +27,4 @@
 
 <br />
 
-<%= link_to 'New Document', new_document_path %>
+<%= link_to 'Upload new Document', new_document_path %>
