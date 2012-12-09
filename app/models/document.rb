@@ -23,7 +23,7 @@ class Document < ActiveRecord::Base
 private
   def document_upload
     # This is for returning a URL to the PDF/Doc/etc file. 
-    # Use with expiring url or url. Expiring has your amazon auth stuff for secured file access.
+    # DO NOT USE THE FOLLOWING LINE WITHOUT ALTERATION. WILL NOT INDEX
     #URI.parse(upload.expiring_url(600))
     URI.parse(upload.url)
   end
